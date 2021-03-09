@@ -4,14 +4,14 @@
     <div class="uk-child-width-1-2 uk-text-center" uk-grid>
         
         <div *ngFor="let agent of agents?.data">
-            <div class="uk-card uk-card-primary uk-card-small">
+            <div routerLink="'/agent/'agent.uuid" class="uk-card uk-border-rounded uk-card-secondary uk-card-small">
 
                 <div class="uk-card-media-top">
-                    <img src="https://getuikit.com/docs/images/light.jpg" alt="">
+                    <img src="{{agent.displayIcon}}" alt="">
                 </div>
                 <div class="uk-card-body">
-                    <h3 class="uk-card-title">Media Top</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <h3 class="uk-card-title">{{agent.displayName}}</h3>
+                    <p class="uk-text-truncate">{{agent.description}}</p>
                 </div>
             </div>
         </div>
