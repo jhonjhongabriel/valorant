@@ -12,4 +12,8 @@ export class APIService {
   getAgents(){
     return this.http.get(this.url + 'agents')
   }
+
+  getAgent(uuid){
+    return this.http.get(this.url + 'agents/'+uuid)
+  }
 }
