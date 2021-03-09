@@ -1,1 +1,17 @@
-<p>agent-page works!</p>
+<div routerLink="/" class="uk-button uk-button-default">
+Voltar
+</div>
+    <div class="uk-container uk-container-large">
+        <div class="uk-text-center">
+            
+            <img src="{{agent?.data?.displayIcon}}" alt="">
+            <h1 class="uk-margin-remove-bottom">{{agent?.data?.displayName}}</h1>
+            <span>
+                {{agent?.data?.developerName}}
+            </span>
+        </div>
+        <p>
+            {{agent?.data?.description}}
+        </p>
+        <img src="{{agent?.data?.bustPortrait}}" alt="">
+    </div>
