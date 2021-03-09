@@ -10,10 +10,10 @@ export class APIService {
   constructor(public http: HttpClient) { }
 
   getAgents(){
-    return this.http.get(this.url + 'agents')
+    return this.http.get(this.url + 'agents?language=pt-BR')
   }
 
   getAgent(uuid){
-    return this.http.get(this.url + 'agents/'+uuid)
+    return this.http.get(this.url + 'agents/'+uuid+'?language=pt-BR')
   }
 }
