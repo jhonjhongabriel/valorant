@@ -4,7 +4,7 @@
     <div class="uk-child-width-1-2 uk-text-center" uk-grid>
         
         <div *ngFor="let agent of agents?.data">
-            <div routerLink="'/agent/'agent.uuid" class="uk-card uk-border-rounded uk-card-secondary uk-card-small">
+            <div routerLink="/agent/{{agent.uuid}}" class="uk-card uk-border-rounded uk-card-secondary uk-card-small">
 
                 <div class="uk-card-media-top">
                     <img src="{{agent.displayIcon}}" alt="">
